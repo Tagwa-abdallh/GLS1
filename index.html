@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نظام إدارة الأراضي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!--  NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <div>
+      <h3>النظام الجيو مكاني</h3>
+      <span>إدارة وتخطيط الأراضي</span>
+    </div>
+    <div class="logo-box"></div>
+    
+  </div>
+
+  <button class="menu-btn">☰</button>
+  <nav class="nav-links mobile-menu">
+    <a href="./index.html">الرئيسية</a>
+    <a href="#">الخريطة</a>
+    <a href="#">إضافة عقار</a>
+    <a href="#">التقارير</a>
+    <a href="#">تواصل</a>
+  </nav>
+
+  <button class="login-btn">تسجيل الدخول</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="badge">نحو تخطيط حضري ذكي</span>
+    <h1>تحويل بيانات الأراضي<br>إلى قرارات ذكية</h1>
+    <p>
+      نظام متكامل لإدارة وتحليل الأراضي يساعد في اتخاذ قرارات دقيقة
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn primary">استكشف الخريطة</button>
+      <button class="btn outline">إضافة عقار</button>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="./img/vecteezy_wonderful-traditional-urban-development-master-plan_57721561.png" />
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat-card">
+    <h2>2</h2>
+    <p>مناطق ذات أولوية</p>
+  </div>
+
+  <div class="stat-card">
+    <h2>2</h2>
+    <p>أراضي غير مبنية</p>
+  </div>
+
+  <div class="stat-card">
+    <h2>3</h2>
+    <p>أراضي مبنية</p>
+  </div>
+
+  <div class="stat-card">
+    <h2>5</h2>
+    <p>إجمالي الأراضي</p>
+  </div>
+</section>
+
+<script>
+  const menuBtn = document.querySelector(".menu-btn");
+  const nav = document.querySelector(".nav-links");
+
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+</body>
+</html>
